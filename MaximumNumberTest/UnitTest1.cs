@@ -9,81 +9,81 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenInteger_MaxFirstNumber_Should_Return_FirstNumber()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<int> maximumNumber = new MaximumNumber<int>(30, 12, 18);
 
-            int max = maximumNumber.GetMaximum(30, 12, 18);
+            int max = maximumNumber.GetMaximum();
 
             Assert.AreEqual(30, max);
         }
         [TestMethod]
         public void GivenInteger_MaxSecondNumber_Should_Return_SecondNumber()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<int> maximumNumber = new MaximumNumber<int>(16, 50, 24);
 
-            int max = maximumNumber.GetMaximum(16, 50, 24);
+            int max = maximumNumber.GetMaximum();
 
             Assert.AreEqual(50, max);
         }
         [TestMethod]
         public void GivenInteger_MaxThirdNumber_Should_Return_ThirdNumber()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<int> maximumNumber = new MaximumNumber<int>(15, 20, 45);
 
-            int max = maximumNumber.GetMaximum(15, 20, 45);
+            int max = maximumNumber.GetMaximum();
 
             Assert.AreEqual(45, max);
         }
         [TestMethod]
         public void GivenDouble_MaxFirstNumber_Should_Return_FirstNumber()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<double> maximumNumber = new MaximumNumber<double>(30.5, 12.9, 18.6);
 
-            double max = maximumNumber.GetMaximum(30.5, 12.9, 18.6);
+            double max = maximumNumber.GetMaximum();
 
             Assert.AreEqual(30.5, max);
         }
         [TestMethod]
         public void GivenDouble_MaxSecondNumber_Should_Return_SecondNumber()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<double> maximumNumber = new MaximumNumber<double>(16.5, 50.8, 24.9);
 
-            double max = maximumNumber.GetMaximum(16.5, 50.8, 24.9);
+            double max = maximumNumber.GetMaximum();
 
             Assert.AreEqual(50.8, max);
         }
         [TestMethod]
         public void GivenDouble_MaxThirdNumber_Should_Return_ThirdNumber()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<double> maximumNumber = new MaximumNumber<double>(15.9, 20.2, 45.5);
 
-            double max = maximumNumber.GetMaximum(15.9, 20.2, 45.5);
+            double max = maximumNumber.GetMaximum();
 
             Assert.AreEqual(45.5, max);
         }
         [TestMethod]
         public void GivenString_MaxFirstString_Should_Return_FirstString()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<string> maximumNumber = new MaximumNumber<string>("888", "555", "111");
 
-            string max = maximumNumber.GetMaximum("888","555","111");
+            string max = maximumNumber.GetMaximum();
 
             Assert.AreEqual("888", max);
         }
         [TestMethod]
         public void GivenString_MaxSecondString_Should_Return_SecondString()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<string> maximumNumber = new MaximumNumber<string>("222", "777", "555");
 
-            string max = maximumNumber.GetMaximum("222","777","555");
+            string max = maximumNumber.GetMaximum();
 
             Assert.AreEqual("777", max);
         }
         [TestMethod]
         public void GivenString_MaxThirdString_Should_Return_ThirdString()
         {
-            MaximumNumber maximumNumber = new MaximumNumber();
+            MaximumNumber<string> maximumNumber = new MaximumNumber<string>("444", "333", "999");
 
-            string max = maximumNumber.GetMaximum("444","333","999");
+            string max = maximumNumber.GetMaximum();
 
             Assert.AreEqual("999", max);
         }

@@ -4,12 +4,20 @@ using System.Text;
 
 namespace MaximumNumberProblem
 {
-    public class MaximumNumber 
+    public class MaximumNumber<T> where T : IComparable
     {
-
-        public T GetMaximum<T>(T firstValue, T secondValue, T thirdValue) where T:IComparable
+        T firstValue;
+        T secondValue;
+        T thirdValue;
+        public MaximumNumber(T firstValue, T secondValue, T thirdValue)
         {
-
+            this.firstValue = firstValue;
+            this.secondValue = secondValue;
+            this.thirdValue = thirdValue;
+        }
+        public T GetMaximum()
+        {
+            
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
                 return firstValue;
