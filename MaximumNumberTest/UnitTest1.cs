@@ -60,5 +60,32 @@ namespace MaximumNumberTest
 
             Assert.AreEqual(45.5, max);
         }
+        [TestMethod]
+        public void GivenString_MaxFirstString_Should_Return_FirstString()
+        {
+            MaximumNumber maximumNumber = new MaximumNumber();
+
+            string max = maximumNumber.GetMaximumString("888","555","111");
+
+            Assert.AreEqual("888", max);
+        }
+        [TestMethod]
+        public void GivenString_MaxSecondString_Should_Return_SecondString()
+        {
+            MaximumNumber maximumNumber = new MaximumNumber();
+
+            string max = maximumNumber.GetMaximumString("222","777","555");
+
+            Assert.AreEqual("777", max);
+        }
+        [TestMethod]
+        public void GivenString_MaxThirdString_Should_Return_ThirdString()
+        {
+            MaximumNumber maximumNumber = new MaximumNumber();
+
+            string max = maximumNumber.GetMaximumString("444","333","999");
+
+            Assert.AreEqual("999", max);
+        }
     }
 }
