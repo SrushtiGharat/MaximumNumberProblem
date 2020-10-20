@@ -17,8 +17,7 @@ namespace MaximumNumberProblem
                 integerValues[i] = Convert.ToInt32(values[i]);
             }
             MaximumNumber<int> maximumInt = new MaximumNumber<int>(integerValues);
-            int maxIntNumber = maximumInt.GetMaximum();
-            Console.WriteLine("Maximum :" + maxIntNumber);
+            maximumInt.PrintMaxValue();
 
             double[] doubleValues = new double[100];
 
@@ -29,15 +28,15 @@ namespace MaximumNumberProblem
                 doubleValues[i] = Convert.ToDouble(values[i]);
             }
             MaximumNumber<double> maximumDouble = new MaximumNumber<double>(doubleValues);
-            double maxDoubleNumber = maximumDouble.GetMaximum();
-            Console.WriteLine("Maximum :" + maxDoubleNumber);
+            maximumDouble.PrintMaxValue();
+
 
             Console.WriteLine("Enter 3 Strings");
             values = Console.ReadLine().Split(" ");
             MaximumNumber<string> maximumString= new MaximumNumber<string>(values);
             string maxString = maximumString.GetMaximum();
             Console.WriteLine("Maximum :" + maxString);
-
+            maximumString.PrintMaxValue();
 
         }
     }

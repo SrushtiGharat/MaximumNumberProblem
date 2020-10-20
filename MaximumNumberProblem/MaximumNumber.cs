@@ -16,5 +16,9 @@ namespace MaximumNumberProblem
             Array.Sort(values);
             return values[values.Length - 1];
         }
+        public void PrintMaxValue()
+        {
+            Console.WriteLine("Maximum Value :" + GetMaximum());
+        }
     }
 }
