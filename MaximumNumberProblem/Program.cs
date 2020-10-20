@@ -11,10 +11,18 @@ namespace MaximumNumberProblem
             
             Console.WriteLine("Welcome To Maximum Number Problem");
             Console.WriteLine("Enter 3 integers");
-            int firstValue = Convert.ToInt32(Console.ReadLine());
-            int secondValue = Convert.ToInt32(Console.ReadLine());
-            int thirdValue = Convert.ToInt32(Console.ReadLine());
-            int maxNumer = maximumNumber.GetMaximumNumber(firstValue, secondValue, thirdValue);
+            int firstIntValue = Convert.ToInt32(Console.ReadLine());
+            int secondIntValue = Convert.ToInt32(Console.ReadLine());
+            int thirdIntValue = Convert.ToInt32(Console.ReadLine());
+            int maxIntNumer = maximumNumber.GetMaximumIntNumber(firstIntValue, secondIntValue, thirdIntValue);
+
+            Console.WriteLine("Enter 3 float numbers");
+            double firstDoubleValue = Convert.ToDouble(Console.ReadLine());
+            double secondDoubleValue = Convert.ToDouble(Console.ReadLine());
+            double thirdDoubleValue = Convert.ToDouble(Console.ReadLine());
+            double maxFloatNumer = maximumNumber.GetMaximumDoubleNumber(firstDoubleValue, secondDoubleValue, thirdDoubleValue);
+
+
         }
     }
 }
