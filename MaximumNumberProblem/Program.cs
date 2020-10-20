@@ -7,29 +7,34 @@ namespace MaximumNumberProblem
     {
         static void Main(string[] args)
         {
-            
+            string[] values;
+            int[] integerValues = new int[100];
             Console.WriteLine("Welcome To Maximum Number Problem");
-            Console.WriteLine("Enter 3 integers");
-            int firstIntValue = Convert.ToInt32(Console.ReadLine());
-            int secondIntValue = Convert.ToInt32(Console.ReadLine());
-            int thirdIntValue = Convert.ToInt32(Console.ReadLine());
-            MaximumNumber<int> maximumInt = new MaximumNumber<int>(firstIntValue, secondIntValue, thirdIntValue);
+            Console.WriteLine("Enter integers");
+            values = Console.ReadLine().Split(" ");
+            for(int i = 0; i < values.Length; i++)
+            {
+                integerValues[i] = Convert.ToInt32(values[i]);
+            }
+            MaximumNumber<int> maximumInt = new MaximumNumber<int>(integerValues);
             int maxIntNumber = maximumInt.GetMaximum();
             Console.WriteLine("Maximum :" + maxIntNumber);
 
+            double[] doubleValues = new double[100];
+
             Console.WriteLine("Enter 3 float numbers");
-            double firstDoubleValue = Convert.ToDouble(Console.ReadLine());
-            double secondDoubleValue = Convert.ToDouble(Console.ReadLine());
-            double thirdDoubleValue = Convert.ToDouble(Console.ReadLine());
-            MaximumNumber<double> maximumDouble = new MaximumNumber<double>(firstDoubleValue, firstDoubleValue, thirdDoubleValue);
+            values = Console.ReadLine().Split(" ");
+            for (int i = 0; i < values.Length; i++)
+            {
+                doubleValues[i] = Convert.ToDouble(values[i]);
+            }
+            MaximumNumber<double> maximumDouble = new MaximumNumber<double>(doubleValues);
             double maxDoubleNumber = maximumDouble.GetMaximum();
             Console.WriteLine("Maximum :" + maxDoubleNumber);
 
             Console.WriteLine("Enter 3 Strings");
-            string firstStringValue = Console.ReadLine();
-            string secondStringValue = Console.ReadLine();
-            string thirdStringValue = Console.ReadLine();
-            MaximumNumber<string> maximumString= new MaximumNumber<string>(firstStringValue, secondStringValue, thirdStringValue);
+            values = Console.ReadLine().Split(" ");
+            MaximumNumber<string> maximumString= new MaximumNumber<string>(values);
             string maxString = maximumString.GetMaximum();
             Console.WriteLine("Maximum :" + maxString);
 
