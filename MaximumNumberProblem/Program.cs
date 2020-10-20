@@ -14,21 +14,21 @@ namespace MaximumNumberProblem
             int firstIntValue = Convert.ToInt32(Console.ReadLine());
             int secondIntValue = Convert.ToInt32(Console.ReadLine());
             int thirdIntValue = Convert.ToInt32(Console.ReadLine());
-            int maxIntNumer = maximumNumber.GetMaximumIntNumber(firstIntValue, secondIntValue, thirdIntValue);
+            int maxIntNumer = maximumNumber.GetMaximum(firstIntValue, secondIntValue, thirdIntValue);
             Console.WriteLine("Maximum :" + maxIntNumer);
 
             Console.WriteLine("Enter 3 float numbers");
             double firstDoubleValue = Convert.ToDouble(Console.ReadLine());
             double secondDoubleValue = Convert.ToDouble(Console.ReadLine());
             double thirdDoubleValue = Convert.ToDouble(Console.ReadLine());
-            double maxDoubleNumer = maximumNumber.GetMaximumDoubleNumber(firstDoubleValue, secondDoubleValue, thirdDoubleValue);
+            double maxDoubleNumer = maximumNumber.GetMaximum(firstDoubleValue, secondDoubleValue, thirdDoubleValue);
             Console.WriteLine("Maximum :" + maxDoubleNumer);
 
             Console.WriteLine("Enter 3 Strings");
             string firstStringValue = Console.ReadLine();
             string secondStringValue = Console.ReadLine();
             string thirdStringValue = Console.ReadLine();
-            string maxStringNumer = maximumNumber.GetMaximumString(firstStringValue, secondStringValue, thirdStringValue);
+            string maxStringNumer = maximumNumber.GetMaximum(firstStringValue, secondStringValue, thirdStringValue);
             Console.WriteLine("Maximum :" + maxStringNumer);
 
 

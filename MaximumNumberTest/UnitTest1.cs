@@ -11,7 +11,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            int max = maximumNumber.GetMaximumIntNumber(30, 12, 18);
+            int max = maximumNumber.GetMaximum(30, 12, 18);
 
             Assert.AreEqual(30, max);
         }
@@ -20,7 +20,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            int max = maximumNumber.GetMaximumIntNumber(16, 50, 24);
+            int max = maximumNumber.GetMaximum(16, 50, 24);
 
             Assert.AreEqual(50, max);
         }
@@ -29,7 +29,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            int max = maximumNumber.GetMaximumIntNumber(15, 20, 45);
+            int max = maximumNumber.GetMaximum(15, 20, 45);
 
             Assert.AreEqual(45, max);
         }
@@ -38,7 +38,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            double max = maximumNumber.GetMaximumDoubleNumber(30.5, 12.9, 18.6);
+            double max = maximumNumber.GetMaximum(30.5, 12.9, 18.6);
 
             Assert.AreEqual(30.5, max);
         }
@@ -47,7 +47,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            double max = maximumNumber.GetMaximumDoubleNumber(16.5, 50.8, 24.9);
+            double max = maximumNumber.GetMaximum(16.5, 50.8, 24.9);
 
             Assert.AreEqual(50.8, max);
         }
@@ -56,7 +56,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            double max = maximumNumber.GetMaximumDoubleNumber(15.9, 20.2, 45.5);
+            double max = maximumNumber.GetMaximum(15.9, 20.2, 45.5);
 
             Assert.AreEqual(45.5, max);
         }
@@ -65,7 +65,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            string max = maximumNumber.GetMaximumString("888","555","111");
+            string max = maximumNumber.GetMaximum("888","555","111");
 
             Assert.AreEqual("888", max);
         }
@@ -74,7 +74,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            string max = maximumNumber.GetMaximumString("222","777","555");
+            string max = maximumNumber.GetMaximum("222","777","555");
 
             Assert.AreEqual("777", max);
         }
@@ -83,7 +83,7 @@ namespace MaximumNumberTest
         {
             MaximumNumber maximumNumber = new MaximumNumber();
 
-            string max = maximumNumber.GetMaximumString("444","333","999");
+            string max = maximumNumber.GetMaximum("444","333","999");
 
             Assert.AreEqual("999", max);
         }
